@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferramentas Grátis & Jogo da Memória - Brook Nook Collection</title>
     <meta name="description" content="Sua curadoria de ferramentas gratuitas para design, produtividade, áudio e um divertido jogo da memória.">
-    
+
+    <!-- Meta tag de verificação do Google AdSense -->
+    <meta name="google-site-verification" content="**COLE_AQUI_SEU_CODIGO_DO_ADSENSE**">
+
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,7 +18,6 @@
             color: #333;
             line-height: 1.6;
         }
-
         .container {
             max-width: 900px;
             margin: 20px auto;
@@ -24,7 +26,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
         header {
             text-align: center;
             padding: 20px 0;
@@ -34,37 +35,15 @@
             flex-direction: column;
             align-items: center;
         }
-        
         .logo {
-            max-width: 150px; /* Ajuste o tamanho conforme necessário */
+            max-width: 150px; /* **Substitua pelo caminho correto da sua logomarca** */
             height: auto;
             margin-bottom: 10px;
         }
-
-        header h1 {
-            color: #0056b3;
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        header p {
-            color: #666;
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
-
-        .category {
-            margin-bottom: 30px;
-        }
-
-        .category h2 {
-            font-size: 2em;
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-
+        header h1 { color: #0056b3; font-size: 2.5em; margin: 0; }
+        header p { color: #666; font-size: 1.1em; margin-top: 10px; }
+        .category { margin-bottom: 30px; }
+        .category h2 { font-size: 2em; color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; margin-bottom: 15px; }
         .tool {
             background-color: #f9f9f9;
             border: 1px solid #e0e0e0;
@@ -75,79 +54,8 @@
             flex-direction: column;
             align-items: flex-start;
         }
-        
-        /* Estilo específico para a ferramenta Text-to-Speech */
-        .text-to-speech-tool {
-            padding: 20px;
-            background-color: #e9f5ff;
-        }
-
-        .text-to-speech-tool textarea {
-            width: 100%;
-            height: 100px;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-        }
-        
-        .text-to-speech-tool label {
-            font-size: 1em;
-            margin-bottom: 5px;
-            color: #555;
-        }
-        
-        .text-to-speech-tool select {
-            width: 100%;
-            padding: 8px;
-            font-size: 1em;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
-        
-        .tts-buttons {
-            display: flex;
-            gap: 10px;
-        }
-
-        .tts-buttons button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.3s;
-        }
-        
-        .tts-buttons button:hover {
-            background-color: #218838;
-        }
-
-        .tts-buttons #download-btn {
-            background-color: #007bff;
-            display: none;
-        }
-        
-        .tts-buttons #download-btn:hover {
-            background-color: #0056b3;
-        }
-
-        .tool h3 {
-            margin: 0 0 5px 0;
-            font-size: 1.5em;
-            color: #007bff;
-        }
-
-        .tool p {
-            margin: 0 0 10px 0;
-            color: #555;
-        }
-
+        .tool h3 { margin: 0 0 5px 0; font-size: 1.5em; color: #007bff; }
+        .tool p { margin: 0 0 10px 0; color: #555; }
         .tool a {
             display: inline-block;
             background-color: #007bff;
@@ -158,11 +66,7 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
-
-        .tool a:hover {
-            background-color: #0056b3;
-        }
-
+        .tool a:hover { background-color: #0056b3; }
         .ad-container {
             text-align: center;
             margin: 30px 0;
@@ -171,7 +75,6 @@
             border-radius: 8px;
             border: 1px dashed #ccc;
         }
-
         footer {
             text-align: center;
             padding: 20px 0;
@@ -180,73 +83,39 @@
             font-size: 0.9em;
             color: #888;
         }
-
-        /* Estilos do Jogo Match-2 */
-        .match2-game {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffe0b2; /* Cor de fundo mais alegre para o jogo */
-            border-radius: 8px;
-            border: 1px solid #ffcc80;
-            margin-top: 20px;
-        }
-
+        /* Jogo Match-2 */
+        .match2-game { text-align: center; padding: 20px; background-color: #ffe0b2; border-radius: 8px; border: 1px solid #ffcc80; margin-top: 20px; }
         #game-board {
             display: grid;
-            grid-template-columns: repeat(4, 70px); /* 4 colunas de 70px */
-            grid-template-rows: repeat(4, 70px);    /* 4 linhas de 70px */
+            grid-template-columns: repeat(4, 70px);
+            grid-template-rows: repeat(4, 70px);
             gap: 10px;
-            width: 320px; /* 4*70 + 3*10 */
+            width: 320px;
             margin: 20px auto;
             border: 2px solid #d8a05e;
             padding: 10px;
             background-color: #fff3e0;
             border-radius: 8px;
         }
-
         .card {
             width: 70px;
             height: 70px;
-            background-color: #ff9800; /* Cor padrão das cartas viradas */
+            background-color: #ff9800;
             border-radius: 8px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 2.5em; /* Tamanho do emoji */
+            font-size: 2.5em;
             cursor: pointer;
             transition: background-color 0.2s, transform 0.2s;
             transform-style: preserve-3d;
             position: relative;
         }
-        
-        .card.flipped {
-            background-color: #ffffff; /* Cor das cartas viradas */
-            transform: rotateY(180deg);
-            cursor: default;
-        }
-
-        .card .front, .card .back {
-            position: absolute;
-            backface-visibility: hidden;
-        }
-
-        .card .front {
-            transform: rotateY(180deg);
-        }
-
-        .card.matched {
-            background-color: #a5d6a7; /* Cor das cartas combinadas */
-            opacity: 0.3;
-            pointer-events: none; /* Impede cliques em cartas combinadas */
-        }
-        
-        #score-display {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #d8a05e;
-        }
-
+        .card.flipped { background-color: #ffffff; transform: rotateY(180deg); cursor: default; }
+        .card .front, .card .back { position: absolute; backface-visibility: hidden; }
+        .card .front { transform: rotateY(180deg); }
+        .card.matched { background-color: #a5d6a7; opacity: 0.3; pointer-events: none; }
+        #score-display { font-size: 1.5em; font-weight: bold; margin-bottom: 10px; color: #d8a05e; }
         #reset-game-btn {
             background-color: #f44336;
             color: white;
@@ -257,285 +126,159 @@
             font-size: 1em;
             transition: background-color 0.3s;
         }
-
-        #reset-game-btn:hover {
-            background-color: #d32f2f;
-        }
+        #reset-game-btn:hover { background-color: #d32f2f; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <img src="logo.png" alt="Logomarca Brook Nook Collection" class="logo">
-            <h1>Melhores Ferramentas Grátis</h1>
-            <p>Sua curadoria completa de ferramentas incríveis e gratuitas para design, produtividade, marketing e muito mais!</p>
-        </header>
+<div class="container">
+    <header>
+        <img src="**logo.png**" alt="Logomarca Brook Nook Collection" class="logo">
+        <h1>Melhores Ferramentas Grátis</h1>
+        <p>Sua curadoria completa de ferramentas incríveis e gratuitas para design, produtividade, marketing e muito mais!</p>
+    </header>
 
-        <div class="ad-container">
-            <p>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXX" crossorigin="anonymous"></script>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-XXXXXXXXXXXXX"
-                     data-ad-slot="YOUR_TOP_AD_SLOT_ID"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </p>
-        </div>
-        
-        <section class="category">
-            <h2>Design Gráfico</h2>
-            <div class="tool">
-                <h3>Canva</h3>
-                <p>Ferramenta de design online fácil de usar. Perfeita para criar posts para redes sociais, apresentações e mais.</p>
-                <a href="https://www.canva.com/" target="_blank">Visitar Site</a>
-            </div>
-            <div class="tool">
-                <h3>Figma</h3>
-                <p>Editor de design de interface colaborativo. Ideal para prototipagem e design de apps e sites.</p>
-                <a href="https://www.figma.com/" target="_blank">Visitar Site</a>
-            </div>
-            <div class="tool">
-                <h3>Remove.bg</h3>
-                <p>Remova o fundo de qualquer imagem em segundos, de forma automática e precisa.</p>
-                <a href="https://www.remove.bg/" target="_blank">Visitar Site</a>
-            </div>
-        </section>
-        
-        <section class="category">
-            <h2>Áudio e Voz</h2>
-            <div class="tool text-to-speech-tool">
-                <h3>Gerador de Texto para Fala</h3>
-                <p>Digite o texto abaixo e ouça a ferramenta lendo em voz alta. Depois, baixe o áudio (função ilustrativa).</p>
-                <textarea id="tts-text" placeholder="Digite seu texto aqui..."></textarea>
-                
-                <label for="tts-voices">Escolha a Voz:</label>
-                <select id="tts-voices"></select>
-                
-                <div class="tts-buttons">
-                    <button id="tts-button">Ouvir</button>
-                    <a id="download-btn" download="audio_gerado.wav">Baixar Áudio</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="category">
-            <h2>Produtividade</h2>
-            <div class="tool">
-                <h3>Trello</h3>
-                <p>Organize projetos e tarefas com quadros, listas e cartões. Perfeito para o trabalho e a vida pessoal.</p>
-                <a href="https://trello.com/" target="_blank">Visitar Site</a>
-            </div>
-            <div class="tool">
-                <h3>Notion</h3>
-                <p>Um espaço de trabalho tudo-em-um para notas, gerenciamento de projetos e colaboração em equipe.</p>
-                <a href="https://www.notion.so/" target="_blank">Visitar Site</a>
-            </div>
-            <div class="tool">
-                <h3>Calendly</h3>
-                <p>Simplifique o agendamento de reuniões. Compartilhe seu link e deixe as pessoas agendarem um horário com você.</p>
-                <a href="https://calendly.com/" target="_blank">Visitar Site</a>
-            </div>
-        </section>
-
-        <div class="ad-container">
-            <p>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXX" crossorigin="anonymous"></script>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-XXXXXXXXXXXXX"
-                     data-ad-slot="YOUR_MIDDLE_AD_SLOT_ID"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </p>
-        </div>
-
-        <section class="category">
-            <h2>Jogo da Memória "Match-2"</h2>
-            <div class="tool match2-game">
-                <p>Encontre os pares de emojis para ganhar pontos! Clique em duas cartas para virá-las.</p>
-                <div id="score-display">Pontos: 0</div>
-                <div id="game-board"></div>
-                <button id="reset-game-btn">Reiniciar Jogo</button>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 Brook Nook Collection&trade;. Todos os direitos reservados. | <a href="mailto:seu-email@exemplo.com">Contato</a></p>
-        </footer>
+    <!-- AdSense Topo -->
+    <div class="ad-container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2826673031152187" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2826673031152187"
+             data-ad-slot="**COLE_AQUI_O_ID_DO_BLOCO**"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
-    <script>
-        // --- Lógica do Gerador de Texto para Fala (TTS) ---
-        const ttsTextarea = document.getElementById('tts-text');
-        const ttsButton = document.getElementById('tts-button');
-        const ttsVoicesSelect = document.getElementById('tts-voices');
-        const downloadBtn = document.getElementById('download-btn');
-        
-        if ('speechSynthesis' in window) {
-            const utterance = new SpeechSynthesisUtterance();
+    <section class="category">
+        <h2>Design Gráfico</h2>
+        <div class="tool"><h3>Canva</h3><p>Ferramenta de design online fácil de usar. Perfeita para criar posts para redes sociais, apresentações e mais.</p><a href="https://www.canva.com/" target="_blank">Visitar Site</a></div>
+        <div class="tool"><h3>Figma</h3><p>Editor de design de interface colaborativo. Ideal para prototipagem e design de apps e sites.</p><a href="https://www.figma.com/" target="_blank">Visitar Site</a></div>
+        <div class="tool"><h3>Remove.bg</h3><p>Remova o fundo de qualquer imagem em segundos, de forma automática e precisa.</p><a href="https://www.remove.bg/" target="_blank">Visitar Site</a></div>
+    </section>
 
-            function populateVoiceList() {
-                const voices = window.speechSynthesis.getVoices().sort((a, b) => a.name.localeCompare(b.name));
-                ttsVoicesSelect.innerHTML = '';
-                
-                // Adiciona uma opção padrão "Auto"
-                const defaultOption = document.createElement('option');
-                defaultOption.textContent = 'Auto (Padrão do Navegador)';
-                defaultOption.value = ''; // Valor vazio para usar o padrão
-                ttsVoicesSelect.appendChild(defaultOption);
+    <section class="category">
+        <h2>Produtividade</h2>
+        <div class="tool"><h3>Trello</h3><p>Organize projetos e tarefas com quadros, listas e cartões. Perfeito para o trabalho e a vida pessoal.</p><a href="https://trello.com/" target="_blank">Visitar Site</a></div>
+        <div class="tool"><h3>Notion</h3><p>Um espaço de trabalho tudo-em-um para notas, gerenciamento de projetos e colaboração em equipe.</p><a href="https://www.notion.so/" target="_blank">Visitar Site</a></div>
+        <div class="tool"><h3>Calendly</h3><p>Simplifique o agendamento de reuniões. Compartilhe seu link e deixe as pessoas agendarem um horário com você.</p><a href="https://calendly.com/" target="_blank">Visitar Site</a></div>
+    </section>
 
-                voices.forEach(voice => {
-                    const option = document.createElement('option');
-                    option.textContent = voice.name + ' (' + voice.lang + ')';
-                    option.value = voice.name;
-                    if (voice.default) {
-                        option.textContent += ' — Padrão';
-                    }
-                    // Filtra por vozes em português ou de idioma não especificado
-                    if (voice.lang.startsWith('pt-') || !voice.lang) {
-                        ttsVoicesSelect.appendChild(option);
-                    }
-                });
+    <!-- AdSense Meio -->
+    <div class="ad-container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2826673031152187" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2826673031152187"
+             data-ad-slot="**COLE_AQUI_O_ID_DO_BLOCO**"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section class="category">
+        <h2>Jogo da Memória "Match-2"</h2>
+        <div class="tool match2-game">
+            <p>Encontre os pares de emojis para ganhar pontos! Clique em duas cartas para virá-las.</p>
+            <div id="score-display">Pontos: 0</div>
+            <div id="game-board"></div>
+            <button id="reset-game-btn">Reiniciar Jogo</button>
+        </div>
+    </section>
+
+    <!-- AdSense Rodapé -->
+    <div class="ad-container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2826673031152187" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2826673031152187"
+             data-ad-slot="**COLE_AQUI_O_ID_DO_BLOCO**"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Brook Nook Collection&trade;. Todos os direitos reservados. | <a href="mailto:seu-email@exemplo.com">Contato</a></p>
+    </footer>
+</div>
+
+<script>
+    // --- Lógica do Jogo Match-2 ---
+    const gameBoard = document.getElementById('game-board');
+    const scoreDisplay = document.getElementById('score-display');
+    const resetGameBtn = document.getElementById('reset-game-btn');
+
+    const emojis = ['🍇', '🍉', '🍊', '🍋', '🍌', '🍍', '🥭', '🍎'];
+    let gameCards = [];
+    let flippedCards = [];
+    let matchedPairs = 0;
+    let score = 0;
+    let lockBoard = false;
+
+    function initializeGame() {
+        gameBoard.innerHTML = '';
+        flippedCards = [];
+        matchedPairs = 0;
+        score = 0;
+        lockBoard = false;
+        scoreDisplay.textContent = `Pontos: ${score}`;
+
+        let cards = [...emojis, ...emojis];
+        cards.sort(() => Math.random() - 0.5);
+
+        gameCards = [];
+        cards.forEach((emoji, index) => {
+            const cardElement = document.createElement('div');
+            cardElement.classList.add('card');
+            cardElement.dataset.emoji = emoji;
+            cardElement.dataset.index = index;
+            cardElement.innerHTML = `<span class="back"></span><span class="front">${emoji}</span>`;
+            cardElement.addEventListener('click', () => flipCard(cardElement));
+            gameBoard.appendChild(cardElement);
+            gameCards.push(cardElement);
+        });
+    }
+
+    function flipCard(card) {
+        if (lockBoard) return;
+        if (card === flippedCards[0]) return;
+
+        if (flippedCards.length < 2 && !card.classList.contains('flipped') && !card.classList.contains('matched')) {
+            card.classList.add('flipped');
+            flippedCards.push(card);
+
+            if (flippedCards.length === 2) {
+                lockBoard = true;
+                setTimeout(checkForMatch, 1000);
             }
-
-            // Popula as vozes ao carregar e quando a lista de vozes muda
-            populateVoiceList();
-            if (speechSynthesis.onvoiceschanged !== undefined) {
-                speechSynthesis.onvoiceschanged = populateVoiceList;
-            }
-            
-            // Comportamento do botão de download (ilustrativo)
-            utterance.onend = () => {
-                downloadBtn.style.display = 'inline-block';
-                downloadBtn.href = '#';
-                downloadBtn.onclick = () => alert("Para baixar o áudio, uma solução de servidor seria necessária. Esta função é apenas ilustrativa.");
-            };
-
-            // Ouve o clique para falar
-            ttsButton.addEventListener('click', () => {
-                const text = ttsTextarea.value.trim();
-                const selectedVoiceName = ttsVoicesSelect.value;
-                
-                if (text) {
-                    const selectedVoice = window.speechSynthesis.getVoices().find(voice => voice.name === selectedVoiceName);
-                    
-                    utterance.text = text;
-                    if (selectedVoice) {
-                        utterance.voice = selectedVoice;
-                        utterance.lang = selectedVoice.lang;
-                    } else {
-                        // Se nenhuma voz específica foi selecionada ou encontrada, usa o idioma padrão
-                        utterance.voice = null;
-                        utterance.lang = 'pt-BR';
-                    }
-                    
-                    window.speechSynthesis.speak(utterance);
-                    downloadBtn.style.display = 'none'; // Esconde o botão até a fala terminar
-                } else {
-                    alert('Por favor, digite um texto para ouvir.');
-                }
-            });
-            
-        } else {
-            // Mensagem de erro se a API não for suportada
-            ttsButton.disabled = true;
-            ttsButton.innerText = 'Não Suportado';
-            ttsTextarea.placeholder = 'Seu navegador não suporta a API de Texto para Fala.';
         }
+    }
 
-        // --- Lógica do Jogo Match-2 ---
-        const gameBoard = document.getElementById('game-board');
-        const scoreDisplay = document.getElementById('score-display');
-        const resetGameBtn = document.getElementById('reset-game-btn');
+    function checkForMatch() {
+        const [card1, card2] = flippedCards;
 
-        const emojis = ['🍇', '🍉', '🍊', '🍋', '🍌', '🍍', '🥭', '🍎']; // 8 tipos de emojis
-        let gameCards = [];
-        let flippedCards = [];
-        let matchedPairs = 0;
-        let score = 0;
-        let lockBoard = false; // Impede cliques durante a verificação de match
-
-        function initializeGame() {
-            gameBoard.innerHTML = '';
-            flippedCards = [];
-            matchedPairs = 0;
-            score = 0;
-            lockBoard = false;
+        if (card1.dataset.emoji === card2.dataset.emoji) {
+            card1.classList.add('matched');
+            card2.classList.add('matched');
+            score += 10;
+            matchedPairs++;
             scoreDisplay.textContent = `Pontos: ${score}`;
 
-            // Duplica os emojis para ter pares
-            let cards = [...emojis, ...emojis]; // Agora são 16 cartas (8 pares)
-            // Embaralha as cartas
-            cards.sort(() => Math.random() - 0.5);
-
-            gameCards = [];
-            cards.forEach((emoji, index) => {
-                const cardElement = document.createElement('div');
-                cardElement.classList.add('card');
-                cardElement.dataset.emoji = emoji;
-                cardElement.dataset.index = index;
-
-                // Para mostrar o emoji virado
-                cardElement.innerHTML = `<span class="back"></span><span class="front">${emoji}</span>`;
-
-                cardElement.addEventListener('click', () => flipCard(cardElement));
-                gameBoard.appendChild(cardElement);
-                gameCards.push(cardElement);
-            });
-        }
-
-        function flipCard(card) {
-            if (lockBoard) return; // Se o tabuleiro estiver bloqueado, não faz nada
-            if (card === flippedCards[0]) return; // Impede clicar na mesma carta duas vezes
-
-            if (flippedCards.length < 2 && !card.classList.contains('flipped') && !card.classList.contains('matched')) {
-                card.classList.add('flipped');
-                flippedCards.push(card);
-
-                if (flippedCards.length === 2) {
-                    lockBoard = true; // Bloqueia o tabuleiro
-                    setTimeout(checkForMatch, 1000); // Espera 1 segundo antes de verificar
-                }
+            if (matchedPairs === emojis.length) {
+                alert(`Parabéns! Você encontrou todos os pares! Sua pontuação final: ${score}`);
             }
+        } else {
+            card1.classList.remove('flipped');
+            card2.classList.remove('flipped');
         }
+        flippedCards = [];
+        lockBoard = false;
+    }
 
-        function checkForMatch() {
-            const [card1, card2] = flippedCards;
-
-            if (card1.dataset.emoji === card2.dataset.emoji) {
-                // Match!
-                card1.classList.add('matched');
-                card2.classList.add('matched');
-                score += 10; // Adiciona pontos
-                matchedPairs++;
-                scoreDisplay.textContent = `Pontos: ${score}`;
-
-                if (matchedPairs === emojis.length) { // Se todos os 8 pares foram encontrados
-                    alert(`Parabéns! Você encontrou todos os pares! Sua pontuação final: ${score}`);
-                }
-            } else {
-                // No Match, vira de volta
-                card1.classList.remove('flipped');
-                card2.classList.remove('flipped');
-            }
-            flippedCards = []; // Reseta as cartas viradas
-            lockBoard = false; // Desbloqueia o tabuleiro
-        }
-
-        resetGameBtn.addEventListener('click', initializeGame);
-
-        // Inicializa o jogo ao carregar a página
-        initializeGame();
-
-    </script>
+    resetGameBtn.addEventListener('click', initializeGame);
+    initializeGame();
+</script>
 
 </body>
 </html>
